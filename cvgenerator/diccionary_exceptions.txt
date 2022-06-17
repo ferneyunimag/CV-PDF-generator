@@ -1,0 +1,2 @@
+code,message,description,cause
+Vo001,error null data on parameter, generated during instance of String value object,
