@@ -1,9 +1,8 @@
 package com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.valueObjects;
 
 
-import com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.exceptions.IsNullValueException;
+import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.domain.IsNullValueException;
 import lombok.Getter;
-import lombok.ToString;
 
 import java.time.ZonedDateTime;
 
@@ -12,7 +11,7 @@ public class StringVO {
 
     private String value;
 
-    public StringVO(String value) throws IsNullValueException {
+    public StringVO(String value) {
         validate(value);
         this.value = value;
     }

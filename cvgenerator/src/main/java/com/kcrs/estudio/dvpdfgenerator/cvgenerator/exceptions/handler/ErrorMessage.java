@@ -1,5 +1,6 @@
-package com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.exceptions;
+package com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.handler;
 
+import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.GeneralException;
 import lombok.Getter;
 import lombok.ToString;
 

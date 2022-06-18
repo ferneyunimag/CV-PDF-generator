@@ -1,4 +1,6 @@
-package com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.exceptions;
+package com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.domain;
+
+import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.http.BadRequestException;
 
 import java.time.ZonedDateTime;
 

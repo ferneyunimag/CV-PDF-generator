@@ -1,4 +1,4 @@
-package com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.exceptions;
+package com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
