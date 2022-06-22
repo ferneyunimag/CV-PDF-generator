@@ -1,10 +1,11 @@
-package com.kcrs.estudio.dvpdfgenerator.cvgenerator.Dao;
+package com.kcrs.estudio.dvpdfgenerator.cvgenerator.services;
 
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.user.UserBasicBuilderInterface;
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.controller.UserNotFoundException;
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.repository.UserEntity;
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.user.UserBasic;
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.repository.UserRepository;
+import com.kcrs.estudio.dvpdfgenerator.cvgenerator.services.interfaces.UserServicesInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

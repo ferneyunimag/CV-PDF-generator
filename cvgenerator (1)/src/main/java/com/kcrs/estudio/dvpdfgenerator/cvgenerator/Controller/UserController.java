@@ -1,7 +1,7 @@
 package com.kcrs.estudio.dvpdfgenerator.cvgenerator.Controller;
 
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.user.UserBasic;
-import com.kcrs.estudio.dvpdfgenerator.cvgenerator.Dao.UserServices;
+import com.kcrs.estudio.dvpdfgenerator.cvgenerator.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.kcrs.estudio.dvpdfgenerator.cvgenerator.Dao;
+package com.kcrs.estudio.dvpdfgenerator.cvgenerator.services.interfaces;
 
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.user.UserBasic;
 

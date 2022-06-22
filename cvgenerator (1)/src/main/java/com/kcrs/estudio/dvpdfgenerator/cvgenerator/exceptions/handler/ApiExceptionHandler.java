@@ -1,6 +1,7 @@
 package com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.handler;
 
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.GeneralException;
+import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.controller.PdfFailCreationException;
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.domain.IsNullValueException;
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.domain.MalformedEmailException;
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.domain.MalformedPhoneNumberException;
@@ -53,7 +54,8 @@ public class ApiExceptionHandler {
     }
 
     @ResponseStatus(HttpStatus.FORBIDDEN)
-    @ExceptionHandler({ForbiddenException.class})
+    @ExceptionHandler({ForbiddenException.class,
+            PdfFailCreationException.class})
     @ResponseBody
     public ErrorMessage forbidden(HttpServletRequest request, ForbiddenException e) {
         return new ErrorMessage(e, request.getRequestURI());
