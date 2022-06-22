@@ -1,5 +1,0 @@
-code,message,description,cause
-Vo001,error null data on parameter, generated during construction of String value object instance;
-Vo002,Malformde pone Number  exception,"", generated during construction of phone number value object instance;
-Vo003,Malformde email contain invalid structure or  characters, generated during construction of email value object instance;
-
