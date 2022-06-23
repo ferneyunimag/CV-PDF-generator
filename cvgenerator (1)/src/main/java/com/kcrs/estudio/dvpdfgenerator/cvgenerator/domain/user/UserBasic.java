@@ -14,7 +14,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
+
 public class UserBasic {
     private StringVO id;
     private StringVO name;
