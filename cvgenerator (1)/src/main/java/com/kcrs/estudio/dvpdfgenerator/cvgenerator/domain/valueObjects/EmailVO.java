@@ -14,14 +14,13 @@ public class EmailVO extends StringVO {
         validate(value);
     }
 
-    private String validate(String value) {
-          Pattern pattern= Pattern.compile("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
-        Matcher matcher= pattern.matcher(value);
-          if (!(matcher.find())) {
+    private void validate(String value) {
+        Pattern pattern = Pattern.compile("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$");
+        Matcher matcher = pattern.matcher(value);
+        if (!(matcher.find())) {
             throw new MalformedEmailException("Vo003", "malformed email esctructure, validate estructure info@info.info ",
                     "", ZonedDateTime.now());
         }
-    return value;
     }
 
 }

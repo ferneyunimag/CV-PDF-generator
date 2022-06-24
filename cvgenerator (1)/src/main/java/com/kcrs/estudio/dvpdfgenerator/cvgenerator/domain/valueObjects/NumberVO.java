@@ -13,14 +13,13 @@ public class NumberVO extends StringVO {
         validate(value);
     }
 
-    private String validate(String value) {
+    private void validate(String value) {
         Pattern pattern = Pattern.compile("[0-9]");
         Matcher matcher = pattern.matcher(value);
         if (!(matcher.find())) {
             throw new MalformedPhoneNumberException("Vo002", "malformed number, chek only contain characters 0-9 ",
                     "", ZonedDateTime.now());
         }
-        return value;
     }
 
 }

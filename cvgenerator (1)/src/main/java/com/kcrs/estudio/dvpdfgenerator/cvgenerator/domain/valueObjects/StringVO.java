@@ -3,13 +3,15 @@ package com.kcrs.estudio.dvpdfgenerator.cvgenerator.domain.valueObjects;
 
 import com.kcrs.estudio.dvpdfgenerator.cvgenerator.exceptions.domain.IsNullValueException;
 import lombok.Getter;
+import lombok.ToString;
 
 import java.time.ZonedDateTime;
 
 @Getter
+@ToString
 public class StringVO {
 
-    private String value;
+    private final String value;
 
     public StringVO(String value) {
         validate(value);
